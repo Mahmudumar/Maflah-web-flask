@@ -1,0 +1,268 @@
+/**/
+
+@media screen and (max-width: 600px) {
+    .navbar a {
+        font-size: 17px;
+    }
+    .navbar {
+        margin: 0px 0px;
+    }
+    .title .titletext {
+        font-size: 25px;
+    }
+    .title img {
+        margin: 0px 0px 0px 20px;
+    }
+    .right-nav * {
+        margin: 0px 3px;
+        font-size: 12px;
+    }
+    .signup {
+        padding: 5px;
+    }
+    section {
+        word-spacing: normal;
+    }
+    /*Home section*/
+    .home {
+        justify-content: center;
+    }
+    .homehead {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .homehead h2 {
+        font-size: 200%;
+    }
+    .homedescrip {
+        display: flex;
+        flex-direction: column;
+    }
+    .hometxt {
+        margin: 0px 20px;
+        width: 70%;
+    }
+    .hometxt p {
+        font-size: 70%;
+        text-align: center;
+    }
+    .homeimg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+    }
+    .home .homeimg img {
+        width: 50%;
+    }
+    /*about section*/
+    .about {
+        justify-content: center;
+    }
+    .abouthead {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .abouthead h2 {
+        font-size: 200%;
+    }
+    .about .aboutdescrip {
+        display: flex;
+        flex-direction: column;
+    }
+    .abouttxt {
+        margin: 0px 20px;
+        width: 70%;
+    }
+    .abouttxt p {
+        font-size: 70%;
+        text-align: center;
+    }
+    .aboutimg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+    }
+    .about .aboutimg img {
+        width: 50%;
+    }
+    /*about section*/
+    .products {
+        justify-content: center;
+    }
+    .prodtitle {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .prodtitle h2 {
+        font-size: 200%;
+    }
+    .msg div {
+        font-size: 60%;
+    }
+    .msg form .subs {
+        width: 300px;
+    }
+}
+
+
+/*mobile 500px and below*/
+
+@media screen and (max-width: 500px) {
+    header {
+        background-color: #f2f2f2;
+    }
+    .navbar {
+        position: absolute;
+        top: 0px;
+        right: 0%;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 500px;
+        width: 60%;
+        margin: 0px;
+        padding: 0px 0px 0px 0px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        overflow-y: hidden;
+    }
+    .navbar li {
+        opacity: 0%;
+    }
+    .navbar a {
+        color: #222222;
+        font-weight: 200;
+        font-size: 20px;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+        pointer-events: all;
+    }
+    .right-nav {
+        width: 40%;
+        justify-content: space-between;
+    }
+    section {
+        word-spacing: normal;
+    }
+    /*Home section*/
+    .home {
+        justify-content: center;
+    }
+    .homehead {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .homehead h2 {
+        font-size: 200%;
+    }
+    .homedescrip {
+        display: flex;
+        flex-direction: column;
+    }
+    .hometxt {
+        margin: 0px 20px;
+        width: 70%;
+    }
+    .hometxt p {
+        font-size: 70%;
+        text-align: center;
+    }
+    .homeimg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+    }
+    .home .homeimg img {
+        width: 50%;
+    }
+    /*about section*/
+    .about {
+        justify-content: center;
+    }
+    .abouthead {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .abouthead h2 {
+        font-size: 200%;
+    }
+    .about .aboutdescrip {
+        display: flex;
+        flex-direction: column;
+    }
+    .abouttxt {
+        margin: 0px 20px;
+        width: 70%;
+    }
+    .abouttxt p {
+        font-size: 70%;
+        text-align: center;
+    }
+    .aboutimg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+    }
+    .about .aboutimg img {
+        width: 50%;
+    }
+    /*about section*/
+    .products {
+        justify-content: center;
+    }
+    .prodtitle {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .prodtitle h2 {
+        font-size: 200%;
+    }
+    .msg div {
+        font-size: 60%;
+    }
+    .msg form .subs {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    body {
+        --nav-height: 10px;
+    }
+    .main {
+        min-height: calc(100vh - (var(--nav-height)));
+    }
+    .title img {
+        margin: 0px 0px;
+    }
+    .signup {
+        padding: 2px;
+        margin: 0px;
+    }
+    .title .titletext {
+        font-size: 10px;
+    }
+    .right-nav {
+        width: 50%;
+    }
+}
+
+
+/*(HEADER's NAVBAR) for toggling nav bar visibilty*/
+
+.nav-active {
+    transform: translateX(0%);
+}
