@@ -110,7 +110,27 @@
             <div class="prodscrollable">
 
                 <!---->
-                <template>
+                <template id="product-temp">
+                    <div class="product">
+
+                        <div id="prodimg">
+                            <img height="300px" width="150" src="" alt="">
+                        </div>
+                    
+                        <div id="proddetails">
+                    
+                            <span class="prodname">
+                                <h4>Product Name</h4>
+                            </span>
+                    
+                            <span class="prodprice">₦</span>
+                    
+                            <span class="proddescrip">
+                                I am the product description. Please make me short
+                            </span>
+                    
+                        </div>
+                    </div>
                 </template>
                 <!---->
 
@@ -127,7 +147,7 @@
                 <span>Be the first to know when its ready</span>
             </div>
 
-            <form action="" method="post" class="form">
+            <form action="/thank" method="post" class="form">
                 <input type="email" name="subscribe" class="subs" placeholder="Tell us your email">
                 <input class="submit" type="submit"></input>
             </form>
@@ -164,6 +184,7 @@
         </div>
         <div class="cright">© Copyright 2022 by Maflah Dev</div>
     </footer>
+
     <script src="/static/js/main/app.js"></script>
     <script src="/static/js/main/form.js"></script>
     <script src="/static/js/main/component.js"></script>

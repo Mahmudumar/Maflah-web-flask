@@ -33,6 +33,10 @@ main {
     box-shadow: 10px 10px #006eff62, 5px 5px #36dd36b9, blur(2px);
 }
 
+.msg h2 {
+    width: 600px;
+}
+
 .return {
     min-width: fit-content;
     min-height: fit-content;

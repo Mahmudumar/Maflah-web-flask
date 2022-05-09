@@ -1,19 +1,16 @@
 from flask import Flask, render_template, request, redirect, url_for
-import flask
-from flask.templating import render_template_string
+from auto_msgs import THANK_MSG_4
 
 
 app = Flask(__name__)
-@app.route('/')
-def products():
-    return render_template_string()
+
+
 
 @app.route('/thank', methods=["GET", "POST"])
 def thank():
     email = request.form.get('subscribe')
     print(email)
-    
-    return render_template('thank.html')
+    return render_template('thank.html',msg=THANK_MSG_4)
 
 @app.route('/', methods=["GET", "POST"])
 def start():
