@@ -33,7 +33,7 @@ if ('content' in document.createElement('template')) {
     // and the row with the template
     const prodscrollable = document.querySelector('.prodscrollable')
     addProduct(prodscrollable, "Blue Gown", "11,000", '/static/imgs/blue1.jpg', 'bgown1')
-    addProduct(prodscrollable, "Green Gown", "12,000", ' /static/imgs/green1.jpg', 'ggown1')
+    addProduct(prodscrollable, "Green Gown with kamisol", "12,000", ' /static/imgs/green1.jpg', 'ggown1')
 
 } else {
     // Find another way to add the rows to the table because
