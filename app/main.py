@@ -4,8 +4,6 @@ from auto_msgs import THANK_MSG_4
 
 app = Flask(__name__)
 
-
-
 @app.route('/thank', methods=["GET", "POST"])
 def thank():
     email = request.form.get('subscribe')
