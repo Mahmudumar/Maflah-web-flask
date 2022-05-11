@@ -30,7 +30,7 @@ main {
     border-radius: 20px;
     justify-content: center;
     align-items: center;
-    box-shadow: 10px 10px #006eff62, 5px 5px #36dd36b9, blur(2px);
+    box-shadow: 5px -5px #2a7ce78c, -5px 5px #3cda3cc4;
 }
 
 .msg h2 {
@@ -50,4 +50,16 @@ main {
 
 .return:hover {
     background-color: #5590d3;
+}
+
+@media screen and (max-width:700px) {
+    .msg h2 {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .msg h2 {
+        width: 300px;
+    }
 }

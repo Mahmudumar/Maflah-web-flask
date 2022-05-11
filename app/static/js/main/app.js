@@ -11,7 +11,7 @@ function setMinHeight() {
     main.style.setProperty('--nav-height', `${headerHeight}px`);
 };
 
-const toggle = (force = null) => {
+const toggle = () => {
     var on = navs.classList.toggle('nav-active').valueOf();
     navlis.forEach((link, index) => {
         // basically if the link in 
@@ -25,19 +25,24 @@ const toggle = (force = null) => {
     burger.classList.toggle('toggle')
 }
 
-const clickLinks = () => {
+const clickLinks = (toggle_ = true) => {
         navlias.forEach((a) => {
             const id = a.getAttribute('id')
                 //when clicked scrolls into view
             const sections = document.querySelector(`.${id}`)
             a.addEventListener('click', () => {
                 sections.scrollIntoView({ 'behavior': 'smooth' })
-                toggle()
+                if (toggle_) {
+                    toggle()
+                } else {
+
+                }
+
             })
         })
     } //toggle nav
 burger.addEventListener('click', toggle)
-clickLinks()
+clickLinks(false)
 
 
 const sizeBody = () => {
@@ -72,6 +77,7 @@ const media = () => {
     if (window.innerWidth <= 500) {
         window.removeEventListener('scroll', Scrolling)
         window.removeEventListener('load', Scrolling)
+        clickLinks(true)
     } else {
         window.addEventListener('scroll', Scrolling);
         window.addEventListener('load', Scrolling);
